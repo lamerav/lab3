@@ -123,10 +123,16 @@ int main()
     }
     cout << endl;
 
+    for (int i = 0; i < n1; ++i)
+    {
+        delete mA[i];
+        delete mB[i];
+        delete mC[i];
+    }
+
     delete[] mA;
     delete[] mB;
     delete[] mC;
-
 
 
 
